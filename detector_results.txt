@@ -1,0 +1,150 @@
+================== VOC2012 ==============
+pretrained on trainval (100%) set
+fine tuned on train (80%), validated on val (20%)
+
+
+pre + 8 epochs w/ blur+noise
+(trainval) + (train), eval on (val)
++-------------+------+-------+--------+-----------+-------+
+| class       | gts  | dets  | recall | precision | ap    |
++-------------+------+-------+--------+-----------+-------+
+| aeroplane   | 168  | 4200  | 0.923  | 0.037     | 0.813 |
+| bicycle     | 151  | 4910  | 0.887  | 0.027     | 0.732 |
+| bird        | 270  | 25718 | 0.863  | 0.009     | 0.611 |
+| boat        | 185  | 14664 | 0.816  | 0.010     | 0.503 |
+| bottle      | 205  | 17798 | 0.776  | 0.009     | 0.462 |
+| bus         | 124  | 916   | 0.919  | 0.125     | 0.849 |
+| car         | 390  | 8727  | 0.890  | 0.040     | 0.749 |
+| cat         | 268  | 2609  | 0.914  | 0.094     | 0.802 |
+| chair       | 389  | 75159 | 0.853  | 0.004     | 0.418 |
+| cow         | 140  | 2952  | 0.929  | 0.044     | 0.635 |
+| diningtable | 96   | 2377  | 0.812  | 0.033     | 0.536 |
+| dog         | 302  | 5848  | 0.964  | 0.050     | 0.781 |
+| horse       | 126  | 1329  | 0.929  | 0.088     | 0.807 |
+| motorbike   | 152  | 1222  | 0.882  | 0.110     | 0.762 |
+| person      | 1792 | 54232 | 0.940  | 0.031     | 0.752 |
+| pottedplant | 182  | 20207 | 0.857  | 0.008     | 0.405 |
+| sheep       | 152  | 16101 | 0.934  | 0.009     | 0.693 |
+| sofa        | 116  | 2090  | 0.828  | 0.047     | 0.624 |
+| train       | 119  | 2834  | 0.958  | 0.040     | 0.798 |
+| tvmonitor   | 157  | 6083  | 0.879  | 0.023     | 0.585 |
++-------------+------+-------+--------+-----------+-------+
+| mAP         |      |       |        |           | 0.666 |
++-------------+------+-------+--------+-----------+-------+
+
+pre
+(trainval), eval on (val)
++-------------+------+------+--------+-----------+-------+
+| class       | gts  | dets | recall | precision | ap    |
++-------------+------+------+--------+-----------+-------+
+| aeroplane   | 168  | 520  | 0.994  | 0.324     | 0.990 |
+| bicycle     | 151  | 438  | 0.967  | 0.336     | 0.960 |
+| bird        | 270  | 1145 | 0.981  | 0.232     | 0.975 |
+| boat        | 185  | 1167 | 0.989  | 0.159     | 0.959 |
+| bottle      | 205  | 1942 | 0.966  | 0.103     | 0.912 |
+| bus         | 124  | 368  | 0.976  | 0.331     | 0.974 |
+| car         | 390  | 1694 | 0.982  | 0.231     | 0.965 |
+| cat         | 268  | 477  | 0.993  | 0.560     | 0.992 |
+| chair       | 389  | 2961 | 0.969  | 0.129     | 0.932 |
+| cow         | 140  | 333  | 0.971  | 0.412     | 0.965 |
+| diningtable | 96   | 431  | 0.969  | 0.224     | 0.960 |
+| dog         | 302  | 604  | 0.997  | 0.499     | 0.996 |
+| horse       | 126  | 259  | 0.992  | 0.484     | 0.991 |
+| motorbike   | 152  | 412  | 0.993  | 0.367     | 0.990 |
+| person      | 1792 | 8330 | 0.978  | 0.215     | 0.957 |
+| pottedplant | 182  | 2017 | 0.956  | 0.087     | 0.909 |
+| sheep       | 152  | 481  | 0.980  | 0.320     | 0.968 |
+| sofa        | 116  | 393  | 0.991  | 0.309     | 0.989 |
+| train       | 119  | 316  | 0.992  | 0.376     | 0.992 |
+| tvmonitor   | 157  | 853  | 0.994  | 0.184     | 0.991 |
++-------------+------+------+--------+-----------+-------+
+| mAP         |      |      |        |           | 0.968 |
++-------------+------+------+--------+-----------+-------+
+
+pre + 8 epochs w/ blur+noise
+(trainval) + (train), eval on (train)
++-------------+------+--------+--------+-----------+-------+
+| class       | gts  | dets   | recall | precision | ap    |
++-------------+------+--------+--------+-----------+-------+
+| aeroplane   | 697  | 18904  | 0.980  | 0.036     | 0.936 |
+| bicycle     | 560  | 19686  | 0.970  | 0.028     | 0.899 |
+| bird        | 849  | 102828 | 0.976  | 0.008     | 0.885 |
+| boat        | 665  | 54526  | 0.940  | 0.011     | 0.721 |
+| bottle      | 1054 | 74208  | 0.915  | 0.013     | 0.672 |
+| bus         | 469  | 3596   | 0.955  | 0.125     | 0.914 |
+| car         | 1627 | 34900  | 0.953  | 0.045     | 0.867 |
+| cat         | 949  | 9639   | 0.983  | 0.097     | 0.945 |
+| chair       | 1965 | 306609 | 0.956  | 0.006     | 0.720 |
+| cow         | 448  | 10935  | 0.975  | 0.040     | 0.890 |
+| diningtable | 513  | 10069  | 0.926  | 0.048     | 0.813 |
+| dog         | 1213 | 22092  | 0.992  | 0.054     | 0.940 |
+| horse       | 584  | 4933   | 0.967  | 0.115     | 0.925 |
+| motorbike   | 561  | 4777   | 0.957  | 0.113     | 0.898 |
+| person      | 6774 | 210760 | 0.972  | 0.031     | 0.879 |
+| pottedplant | 791  | 80163  | 0.948  | 0.009     | 0.698 |
+| sheep       | 661  | 62708  | 0.964  | 0.010     | 0.879 |
+| sofa        | 450  | 8008   | 0.953  | 0.054     | 0.808 |
+| train       | 509  | 9475   | 0.980  | 0.053     | 0.925 |
+| tvmonitor   | 627  | 24189  | 0.951  | 0.025     | 0.814 |
++-------------+------+--------+--------+-----------+-------+
+| mAP         |      |        |        |           | 0.851 |
++-------------+------+--------+--------+-----------+-------+
+
+pre + 8 epochs w/ blur+noise (unary)
+(trainval) + (train), eval on (val)
++---------+-----+-------+--------+-----------+-------+
+| class   | gts | dets  | recall | precision | ap    |
++---------+-----+-------+--------+-----------+-------+
+| vehicle | 936 | 36130 | 0.902  | 0.023     | 0.760 |
++---------+-----+-------+--------+-----------+-------+
+| mAP     |     |       |        |           | 0.760 |
++---------+-----+-------+--------+-----------+-------+
+
+pre + 8 epochs w/ blur+noise (unary) + 1 epoch w/ blur+noise 50% chance each (binary)
+(trainval) + (train), eval on (val)
++-------------+------+--------+--------+-----------+-------+
+| class       | gts  | dets   | recall | precision | ap    |
++-------------+------+--------+--------+-----------+-------+
+| vehicle     | 936  | 26374  | 0.911  | 0.032     | 0.796 |
+| not_vehicle | 4548 | 440076 | 0.927  | 0.010     | 0.711 |
++-------------+------+--------+--------+-----------+-------+
+| mAP         |      |        |        |           | 0.754 |
++-------------+------+--------+--------+-----------+-------+
+
+======================= UA-DETRAC =====================
+datasets: train (70%), val (30%), minitrain (10% of train), minival (10% of val)
+training will always use blur+noise augmentation on top of default augs
+
+== Cascade rcnn + dconv ==
+baseline, eval on (val) # aboslutely terrible, gives nonsense detections
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+
+base + train w/ blur+noise (binary)
+FAILED
+
+
+== cascade + HRNet ==
+pretrained on COCO, fine tuned (train) 3 epochs, val on minival
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.777
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.980
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.926
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.554
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.781
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.842
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.125
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.717
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.820
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.687
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.824
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.880
