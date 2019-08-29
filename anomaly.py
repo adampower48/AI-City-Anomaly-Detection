@@ -190,7 +190,9 @@ def get_anomalies_sequential(video_reader, reid_model_path, fbf_results_dict, st
         else:
             boxes = []
 
-        ###
+        tmp_score, tmp_detect = add_boxes(boxes, ignore_matrix)
+
+        ### plotting
         # img = video_reader.get_frame(frame)
         # cmap = plt.get_cmap("viridis")
         # for x1, y1, x2, y2, score in boxes:
@@ -203,7 +205,6 @@ def get_anomalies_sequential(video_reader, reid_model_path, fbf_results_dict, st
         #     plt.show()
         ###
 
-        tmp_score, tmp_detect = add_boxes(boxes, ignore_matrix)
 
         if verbose:
             print(f"frame: {frame}")

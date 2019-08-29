@@ -16,6 +16,27 @@ To use another model:
  
 See detector_results.txt for rough performances for the models I tested.
 
+
+# Code Structure
+- For each video: (pipeline.py)
+    1. Background modelling: Filters out moving vehicles (background.py)
+    2. Load detector (detection.py)
+    3. Run vehicle detection on raw video (detection.py)
+    4. Run vehicle detection on background (detection.py)
+    5. Create perspective cropping boxes (optional) (cropping.py)
+    6. Create ignore region (not implemented properly) (ignore.py)
+    7. Perform anomaly detection (anomaly.py)
+        1. Load vehicle re-ID model (reid/extractor.py)
+        2. Initialise global spatial-temporal info matrices
+        3. For each background frame:
+            1. Create temp score & detect matrices, update global matrices
+            2. Check for anomaly region, if there is one, backtrack to find start time
+            3. Update anomaly status
+        4. Finish any current anomalies & return results
+    8. Combine overlapping anomalies (utils.py)
+    9. Save results
+    
+# Problems
 I had to make some small changes to the mmdetection code to make training/testing detectors work.  
 The standard library should work for testing the whole code though.
 
