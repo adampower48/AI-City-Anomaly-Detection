@@ -41,8 +41,8 @@ ssd_model_path = "/data/modules/mmdetection/work_dirs/ssd512_voc_2cls/latest.pth
 # cascade_dcn_config_path = "/data/modules/mmdetection/configs/dcn/cascade_rcnn_dconv_2cls.py"
 # cascade_dcn_model_path = "/data/modules/mmdetection/work_dirs/cascade_rcnn_dconv_2cls/latest.pth"
 
-cascade_dcn_config_path = "/data/modules/mmdetection/configs/dcn/cascade_rcnn_dconv_7cls.py"
-cascade_dcn_model_path = "/data/modules/mmdetection/work_dirs/cascade_rcnn_dconv_7cls/latest.pth"
+cascade_dcn_config_path = "/data/modules/mmdetection/configs/dcn/cascade_rcnn_dconv_custom.py"
+cascade_dcn_model_path = "/data/modules/mmdetection/work_dirs/cascade_rcnn_dconv/latest.pth"
 
 faster_rcnn_config_path = "./mmdet_configs/faster_rcnn_dconv_c3-5_r50_fpn_x1_shubai.py"
 faster_rcnn_model_path = "/data/modules/mmdetection/checkpoints/faster_rcnn_dconv_c3-5_r50_fpn_x1_shubai.pth"
@@ -67,7 +67,7 @@ cascade_hrnet_model_path = "/data/modules/mmdetection/work_dirs/cascade_rcnn_hrn
 # Folder of videos
 anomalies, anomaly_times = process_folder(video_dir, static_dir, frame_by_frame_results_dir, static_results_dir,
                                           crop_boxes_dir,
-                                          ignore_mask_dir, cascade_hrnet_config_path, cascade_hrnet_model_path, reid_model_path,
+                                          ignore_mask_dir, cascade_dcn_config_path, cascade_dcn_model_path, reid_model_path,
                                           reid_model_backbone,
                                           crop_results_dir, anomaly_results_dir, bg_interval=4, crop_min_obj_size=8)
 
